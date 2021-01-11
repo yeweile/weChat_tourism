@@ -1,0 +1,24 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+  <!-- 获取头像 -->
+  <view class="portraitCon">
+    <image src="../images/user/bg1.png" mode="widthFix" class="portraitBg"></image>
+    <view class="pottraitGroup">
+      <image src="{{avatarUrl}}" mode="widthFix" class="portrait"></image>
+      <view class="username">{{nickName}}</view>
+    </view>
+  </view>
+  <!-- 设置内容 -->
+  <view class="settingCon">
+    <view class="settingItem">{{weather}}<switch color="#87c6ff" bindchange="switchChange"></switch></view>
+    <view class="settingItem">
+      撰写攻略 <image src="../images/arrow.png" mode="sapectFit" bindtap="toBlog"></image>
+    </view>
+    <view class="settingItem">
+      <view class="v-align">
+        更多信息
+        <icon type="info" size="20" color="#87c6ff"></icon>
+      </view>
+    </view>
+  </view>
+</view>
